@@ -98,29 +98,7 @@ bakground-blend-mode: multiply sets blending mode to multiply*/
     background-position: -750px 0;
 }
 
-#carmy:hover {
-    background-position-y: 150px;
-}
-
-#syndey:hover {
-    background-position-y: 150px;
-}
-/*Cannot understand why sydney's sprite is not working - tried to individually
-add the :hover selector to see if that would fix the issue (instead of listing
-them all out) but that didn't fix anything */
-#richie:hover {
-    background-position-y: 150px;
-}
-
-#marcus:hover {
-    background-position-y: 150px;
-}
-
-#sugar:hover {
-    background-position-y: 150px;
-}
-
-#tina:hover {
+#carmy:hover, #sydney:hover, #richie:hover, #marcus:hover, #sugar:hover, #tina:hover {
     background-position-y: 150px;
 }
 
