@@ -30,7 +30,7 @@ header {
 /*background for character nav*/
 #character_nav {
     background-color: #675050;
-    background-image: url(../images/bear-banner.png); /*pathing is different in css*/
+    background-image: url(../images/bear-banner.jpg); /*pathing is different in css*/
     background-size: cover;
     background-blend-mode: multiply;
 }
@@ -54,9 +54,8 @@ bakground-blend-mode: multiply sets blending mode to multiply*/
     background-color: black;
     margin: 10px 8px;
     text-align: center;
-    cursor: pointer; 
+    cursor: pointer;    /*sets the mouse cursor to show pointer when its over an element*/
     box-shadow: 0 155px 0 0 rgb(255, 255, 255) inset;
-    /*sets the mouse cursor to show pointer when its over an element*/
     transition: box-shadow 0.2s ease-in-out;
 }
 
@@ -125,3 +124,76 @@ them all out) but that didn't fix anything */
     background-position-y: 150px;
 }
 
+#instructions {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sticky-footer {
+    position: sticky;
+    top: 100%;
+    height: 60px;
+    background-color: #271D1B;
+}
+
+.sticky-footer h3 {
+    font-size: 12px;
+}
+
+/*lightbox*/
+
+.lightbox {
+    width: 100vw;
+    height: 100vh; /*vw/vh is size relative to viewport*/
+    position: absolute;
+    top: 0;
+    z-index: 100;
+    background-color: black;
+    background-image: url(../images/carmy-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 55vh;
+    background-position: 40px bottom;
+    display: none;
+}
+
+.lightbox-close {
+    position:relative;
+    top: 20px;
+    left: 95%;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color .3s linear;
+}
+
+.lightbox-close:hover {
+    color: red;
+}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb-text {
+    line-height: 26px;
+}
+
+.lb-heading {
+    font-size: 34px;
+}
+
+.lightbox:target {
+    display:block;
+}
+
+#lightbox2 {
+    background-image: url(../images/sydney-2.png);
+}
