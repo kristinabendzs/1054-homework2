@@ -1,0 +1,127 @@
+/*basic website design elements*/
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(52, 41, 35);
+    color: #fff;
+}
+
+header {
+    background-color: #271D1B;
+    padding: 12px 0;
+}
+
+#main-logo {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px rgba(0,0,0,.5);
+}
+/*box-shadow adds a shadow effect around the element*/
+
+/*background for character nav*/
+#character_nav {
+    background-color: #675050;
+    background-image: url(../images/bear-banner.png); /*pathing is different in css*/
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+/*background-size: cover risizes the image to cover the entire 
+container, strecthing it out or cropping image if needed
+bakground-blend-mode: multiply sets blending mode to multiply*/
+
+.characters {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 8px;
+}
+
+.characters li {
+    height: 200px;
+    background-color: black;
+    margin: 10px 8px;
+    text-align: center;
+    cursor: pointer; 
+    box-shadow: 0 155px 0 0 rgb(255, 255, 255) inset;
+    /*sets the mouse cursor to show pointer when its over an element*/
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.characters li:hover {
+    box-shadow: 0 200px 0 0 rgb(75, 48, 48) inset;
+}
+
+.characters li h3 {
+    color: white;
+    padding: 15px 8px;
+}
+
+.characters li a {
+    text-decoration: none;
+}
+
+.sprite {
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/the-bear-cast.png);
+}
+
+#sydney {
+    background-position: -150px 0;
+}
+
+#richie {
+    background-position: -300px 0;
+}
+
+#marcus {
+    background-position: -450px 0;
+}
+
+#sugar {
+    background-position: -600px 0;
+}
+
+#tina {
+    background-position: -750px 0;
+}
+
+#carmy:hover {
+    background-position-y: 150px;
+}
+
+#syndey:hover {
+    background-position-y: 150px;
+}
+/*Cannot understand why sydney's sprite is not working - tried to individually
+add the :hover selector to see if that would fix the issue (instead of listing
+them all out) but that didn't fix anything */
+#richie:hover {
+    background-position-y: 150px;
+}
+
+#marcus:hover {
+    background-position-y: 150px;
+}
+
+#sugar:hover {
+    background-position-y: 150px;
+}
+
+#tina:hover {
+    background-position-y: 150px;
+}
+
